@@ -1,11 +1,11 @@
 
 <div class="items-center justify-center mt-10 max-w-lg">
-<form action="{{route('send')}}" method='POST'>
+<form method="post" action="/send" >
     @csrf
    <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50">
        <div class="px-4 py-2 text-black bg-white rounded-t-lg">
            <label for="comment" class="">Write a Prompt</label>
-           <textarea id="comment" rows="2" class="w-full rounded-lg p-4 text-sm text-gray-900 bg-white border border-gray-300 focus:ring-0 " placeholder="Write your prompt here..." required ></textarea>
+           <textarea name="comment" rows="2" class="w-full rounded-lg p-4 text-sm text-gray-900 bg-white border border-gray-300 focus:ring-0 " placeholder="Write your prompt here..." required ></textarea>
        </div>
        <div class="flex items-center justify-between px-3 py-2 border-t ">
            <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-800">
